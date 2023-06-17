@@ -1,769 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utkarsh's Personal Portfolio</title>
 
-    <meta charset="utf-8">
-    <title>MozCode 2021</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-    <!-- METATAGS -->
-    <meta name="keywords" content="mozcode,mozcode 2021,mozcode vit,mfc mozcode,mfc,mfcvit,vit,mfc vit,mozilla,firefox,mozilla firefox,mozilla firefox club,campus club">
-    <meta name="google-site-verification" content="OvhgaVCr47MpTibKO93-LrPTv89FesSjqpc8CXYhqG8" />
-    <meta name="description" content="MozCode is a 2-day Competitive Coding Event conducted by Mozilla Firefox Club VIT.">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Bootstrap -->
-    <link href="plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link href="plugins/font-awsome/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Magnific Popup -->
-    <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Slick Carousel -->
-    <link href="plugins/slick/slick.css" rel="stylesheet">
-    <link href="plugins/slick/slick-theme.css" rel="stylesheet">
-
-    <!-- CUSTOM CSS -->
-    <link href="style.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-    <!-- FAVICON -->
-    <link href="images/mfc_logo.png" rel="shortcut icon">
-    <script src="https://kit.fontawesome.com/df5b5f81bf.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body class="body-wrapper">
-    <nav class="navbar main-nav border-less sticky-top navbar-expand-lg p-0" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-        <div class="container-fluid p-0">
-            <!-- logo -->
-            <a class="navbar-brand" href="https://mfcvit.in/">
-                <img src="images/mfc_logo.png" alt="MFC-VIT" style="width: 55px; height: auto;">
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Utkarsh Tyagi</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:utkarsh.tyagi2021@vitstudent.ac.in" class="contact-link">utkarsh.tyagi2021@vitstudent.ac.in</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+918287167572" class="contact-link">+91 8287167572</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-09-30">September 30, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>New Delhi, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <!-- <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="fa fa-bars"></span>
-			</button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto pr-lg-5">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#about">About MozCode</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#speakers">Speakers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#timeline">Timeline</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sponsors">Sponsors</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faqs">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacts</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+          </li> -->
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/utkarsh-tyagi-a5a312211/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/utkarshtyagi07" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
 
 
-    <section id="mozilla">
 
 
-        <div class="wave1"></div>
 
-        <section class="banner bg-banner-one overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 p-0" id="landingpage">
-                        <div class="block">
-                            <div class="timer"></div>
-                            <div class="wave3"></div>
-                            <img src="./images/mozcode_logo.png" alt="mozc::de" style="width: 35vw;">
-                            <h6 class="tagline">A Maneuver for the Zealots of Coding</h6>
-                            <h6 class="hashtag">#MozWithCode</h6>
-                            <a href="https://discord.gg/DWR9VY5Ktt" class="btn btn-white-md mt-3"> <i class="fab fa-discord fa-lg"></i> &nbsp Join Our Discord</a>
-                            <!--<a href="#registration-form" class="btn btn-white-md1 mt-3"></i>Register Now</a>-->
-                        </div>
-                    </div>
-                </div>
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li> -->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Dev Developer from Delhi, India. I'm pursuing BTech in Computer Science Department From Vellore Institute Of Technology, Vellore.
+
+          </p>
+
+          <p>
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+          </p>
         </section>
 
-        <section class="section about" id="about">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 align-self-center">
-                        <div class="image-block bg-about">
-                            <img class="about-mozcode" src="images/About Mozcode.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 align-self-center about-content">
-                        <div class="content-block">
-                            <h2 class="text-left">About <span class="alternate">MozCode</span></h2>
-                            <div class="description-one text-justify">
-                                <p>
-                                    Gear up for the year’s most awaited online Coding Competition! MozCode is a mega two-day event organised by MFC-VIT, which is a competitive coding competition hosted to test the coding skills of the participants.</p>
-                            </div>
-                            <div class="description-one text-justify">
-                                <p>
-                                    So, Get ready for the brain game and test your problem-solving skills thereby intensifying your analytical and rational thinking. If you are a technophile and have the zeal to make a difference, here is your chance to showcase your tech-prowess in this
-                                    coding competition.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-lg-8 col-md-8 align-self-center about-content">
-                        <div class="content-block">
-                            <h2 class="text-left">About <span class="alternate">MFC-VIT</span></h2>
-                            <div class="description-one text-justify">
-                                <p>
-                                    Mozilla Firefox Club VIT, one of the largest developers' communities in VIT, Vellore has been working with an aspiration of changing ideas into reality ever since its inception.
-                                </p>
-                            </div>
-                            <div class="description-one text-justify">
-                                <p>
-                                    We provide a morale boosting system for the talented youth through our professional endeavors and inspire each student at VIT and beyond to folow our academic interests and goals. Members have immense dedication and devotion towards work, and toil very
-                                    hard with a "never say no" spirit to achieve a singular goal of excellence in the field of technology with insuppressible zeal.
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 align-self-center">
-                        <div class="image-block bg-about">
-                            <img class="img-fluid" src="images/About MFC.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Programmer</h4>
+
+                <p class="service-item-text">
+                  I'm Proficient in Python, C/C++, Java, Mysql
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites Using HTML, CSS, JS, JQUERY, BOOTSTRAP
+                </p>
+              </div>
+
+            </li>
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li> -->
+
+          </ul>
+
         </section>
-    </section>
 
-    <section class="section speakers bg-speaker overlay-lighter" id="speakers">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title white">
-                        <h3>Who's <span class="alternate">Speaking?</span></h3>
-                        <p>Take a look at the speakers at our event!</p>
-                    </div>
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
                 </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
 
-            <div class="speak">
-                <div class="container">
-                    <div class="row d-flex justify-content-center align-items-center">
+            <div class="modal-content">
 
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                            <div class="our-team">
-                                <div class="picture">
-                                    <img class="img-fluid" src="./images/speakers/RJ1.png">
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="name">Rajat Jain</h3>
-                                    <h4 class="title">SDE at Microsoft</h4>
-                                </div>
-                                <ul class="social">
-                                    <li>
-                                        <a href="https://rajatexplains.com/" class="fa fa-globe" target="_blank" aria-hidden="true"></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://instagram.com/javascript_to_the_rescue" class="fa fa-instagram" target="_blank" aria-hidden="true"></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://linkedin.com/in/rajatjain-21" class="fa fa-linkedin" target="_blank" aria-hidden="true"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                            <div class="our-team">
-                                <div class="picture">
-                                    <img class="img-fluid" src="./images/speakers/RS.png">
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="name">Ridhi Shikha</h3>
-                                    <h4 class="title">SDE at Amazon</h4>
-                                </div>
-                                <ul class="social">
-                                    <li>
-                                        <a href="https://www.facebook.com/ridhi.s.sinha" class="fa fa-facebook" target="_blank" aria-hidden="true"></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/pitter_patter_purple/?hl=en" class="fa fa-instagram" target="_blank" aria-hidden="true"></a>
-                                    </li>
-                                    <li>
-                                        <a href="http://linkedin.com/in/ridhi-rid-hee-shikha-shi-kah-b8898782" class="fa fa-linkedin" target="_blank" aria-hidden="true"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                            <div class="our-team">
-                                <div class="picture">
-                                    <img class="img-fluid" src="./images/speakers/bk.JPG">
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="name">Bipin Kalra</h3>
-                                    <h4 class="title">SDE at Spinny</h4>
-                                </div>
-                                <ul class="social">
-                                    <li>
-                                        <a href="https://instagram.com/bipinkalra_" class="fa fa-instagram" target="_blank" aria-hidden="true"></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/bipinkalra/" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
+              <time datetime="2021-06-14">14 June, 2021</time>
 
-                    </div>
-                </div>
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
             </div>
+
+          </section>
+
         </div>
-        </div>
-    </section>
 
 
-    <div class="feature mt-5 schedule" id="timeline">
-        <div class="time">
-            <h1><span class="alternate">Timeline</span></h1>
-        </div>
-        <div class="row m-0">
-            <div class="col-12">
-                <div class="schedule-tab">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <ul class="nav nav-pills text-center d-flex justify-content-center">
-                            <li class="nav-item day-no">
-                                <a class="schedule-days nav-link active" href="#part1" data-toggle="pill">
-                                    <h4 class="mb-3">DAY 1</h4>
-                                    <h6>10th July 2021</h6>
-                                </a>
-                            </li>
-                            <li class="nav-item day-no">
-                                <a class="schedule-days nav-link" href="#part2" data-toggle="pill">
-                                    <h4 class="mb-3">DAY 2</h4>
-                                    <h6>11th July 2021</h6>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
-        </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Vellore Institute Of Technology, Vellore</h4>
+
+              <span>2021 — Present</span>
+
+              <p class="timeline-text">
+                Currently, I am studying in one of the most prestigious Engineering College in India, Vellore Institute Of Technology. I am pursuing Btech with specialisation in Information Security.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">New Era Public School, New Delhi</h4>
+
+              <span>2012-2021</span>
+
+              <p class="timeline-text">
+                I did my 10th and 12th from New Era Public School Mayapuri, New Delhi. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Happy Model School, New Delhi</h4>
+
+              <span>2007 — 2012</span>
+
+              <p class="timeline-text">
+                I did my earlier stage education from Happy Model School, Janakpuri, New Delhi.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Accomplishments</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research And Development Head</h4>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                I was the Research And Development Head of, one of the most prestigious technical club of Vit Vellore, Mozilla Firefox Club VIT. In this I led a team of more than 1000+ people.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Scholar</h4>
+
+              <span>2019</span>
+
+              <p class="timeline-text">
+                I was a scholar in my school as I scored more than 90% in class 10
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Prefect</h4>
+
+              <span>2019</span>
+
+              <p class="timeline-text">
+                I was a part of the school committee in 11th Class
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Events Organized In College</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Innoverse</h4>
+
+              <span>June, 2023</span>
+
+              <p class="timeline-text">
+                It was a Hackathon which was organized by me with a team of 20 people. It was organised during Yantra 2023. It was a very successful event in which more than 500+ people participated.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Git Z</h4>
+
+              <span>October 2022</span>
+
+              <p class="timeline-text">
+                It was an online event that was organized by me after Go Git It.
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Go Git It</h4>
+
+              <span>October 2022</span>
+
+              <p class="timeline-text">
+                It was an online event that I organized in which I taught the basics of Git and Github.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Beginner's Guide To App Development</h4>
+
+              <span>June 2022</span>
+
+              <p class="timeline-text">
+                It was an online event in which we taught our juniors the basics of App Development.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certifications</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Python Data Structures</h4>
+
+              <span>2022</span>
+
+              <p class="timeline-text">
+                I learnt basics of dsa using python.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">JQuery</h4>
+
+              <span>2021</span>
+
+              <p class="timeline-text">
+                In this course i learnt how to add power & interactivity to my website.
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Responsive Design</h4>
+
+              <span>2021</span>
+
+              <p class="timeline-text">
+                In this course I learnt different ways to make the website responsive.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Javascript</h4>
+
+              <span>2021</span>
+
+              <p class="timeline-text">
+                In this course I learnt about basics of javascript. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HTML and CSS</h4>
+
+              <span>2021</span>
+
+              <p class="timeline-text">
+                In this course i learnt about creating my own website. 
+              </p>
+
+            </li>
+
+
+
+
+          </ol>
+
+        </section>
+        
+
+        
+        
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CSS</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Javascript</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C/C++</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">MySql</h5>
+                <data value="50">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Structures And Algorithms</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <!-- <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li> -->
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <!-- <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li> -->
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mozilla Firefox Club VIT</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Weather Website</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Innoverse</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mozcode</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Netflix Clone (Home Page)</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
 
     </div>
-    <div class="schedule-contents bg-schedule">
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active schedule-item overflow-hidden" id="part1">
-                <div class="grey_light-block pt-5">
-                    <div class="timeline white">
 
-                        <div class="point"> </div>
-
-                        <div class="point">
-                            <div class="bocata text-left row">
-                                <div class="col-md-12 timeline-title pb-2">11:00 AM</div>
-                                <div class="col-md-12 large mb-2">Inauguration & Title Sponsor Speech</div>
-                            </div>
-                            <i class="arrow"></i>
-                        </div>
-
-                        <div class="point">
-                            <div class="bocata text-left row">
-                                <div class="col-md-12 timeline-title pb-2">11:30 AM</div>
-                                <div class="col-md-12 large mb-2">Session with Ridhi Shikha</div>
-                            </div>
-                            <i class="arrow"></i>
-                        </div>
-
-                        <div class="point">
-                            <div class="bocata text-left row">
-                                <div class="col-md-12 timeline-title pb-2">3:00 PM</div>
-                                <div class="col-md-12 large mb-2">Round 1 Starts</div>
-                                <div class="col-md-12 large"><img src="" class="img-fluid"></div>
-                            </div>
-                            <i class="arrow"></i>
-                        </div>
-
-                        <div class="point">
-                            <div class="bocata text-left row">
-                                <div class="col-md-12 timeline-title pb-2">7:00 PM</div>
-                                <div class="col-md-12 large mb-2">Session with Rajat Jain</div>
-                                <div class="col-md-12 large"><img src="" class="img-fluid"></div>
-                            </div>
-                            <i class="arrow"></i>
-                            <i class="arrow-clean"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="tab-pane fade schedule-item overflow-hidden" id="part2">
-                <div class="grey_light-block pt-5">
-                    <div class="timeline white">
-                        <div class="point"> </div>
-                        <div class="point">
-                            <div class="bocata text-left row">
-                                <div class="col-md-12 timeline-title pb-2">6:00 AM</div>
-                                <div class="col-md-12 large mb-2">Round 1 Result Declaration</div>
-                                <div class="col-md-12 large"><img src="" class="img-fluid"></div>
-                            </div>
-                            <i class="arrow"></i>
-                        </div>
-
-                        <div class="point">
-                            <div class="bocata text-left row">
-                                <div class="col-md-12 timeline-title pb-2">10:00 AM</div>
-                                <div class="col-md-12 large mb-2">Round 2 Starts</div>
-                                <div class="col-md-12 large"><img src="" class="img-fluid"></div>
-                            </div>
-                            <i class="arrow"></i>
-                        </div>
-
-                        <div class="point">
-                            <div class="bocata text-left row">
-                                <div class="col-md-12 timeline-title pb-2">2:00 PM</div>
-                                <div class="col-md-12 large mb-2">Session with Bipin Kalra</div>
-                                <div class="col-md-12 large"><img src="" class="img-fluid"></div>
-                            </div>
-                            <i class="arrow"></i>
-                        </div>
-
-                        <div class="point">
-                            <div class="bocata text-left row">
-                                <div class="col-md-12 timeline-title pb-2">3:30 PM</div>
-                                <div class="col-md-12 large mb-2">Round 2 Result Declaration</div>
-                                <div class="col-md-12 large"><img src="" class="img-fluid"></div>
-                            </div>
-                            <i class="arrow"></i>
-                        </div>
-
-                        <div class="point">
-                            <div class="bocata text-left row">
-                                <div class="col-md-12 timeline-title pb-2">4:00 PM</div>
-                                <div class="col-md-12 large mb-2">Round 3 Starts</div>
-                                <div class="col-md-12 large"><img src="" class="img-fluid">
-                                </div>
-                            </div>
-                            <i class="arrow"></i>
-                        </div>
-                        <div class="point">
-                            <div class="bocata text-left row">
-                                <div class="col-md-12 timeline-title pb-2">6:00 PM</div>
-                                <div class="col-md-12 large mb-2">Closing Ceremony</div>
-                                <div class="col-md-12 large"><img src="" class="img-fluid"></div>
-                            </div>
-                            <i class="arrow"></i>
-                        </div>
-
-                        <div class="point">
-                            <div class="bocata text-left row">
-                                <div class="col-md-12 timeline-title pb-2">10:30 PM</div>
-                                <div class="col-md-12 large mb-2">Round 3 Result Declaration</div>
-                                <div class="col-md-12 large"><img src="" class="img-fluid">
-                                </div>
-                            </div>
-                            <i class="arrow"></i>
-                            <i class="arrow-clean"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-    <section class="sponsors section bg-sponsors" id="sponsors">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title white">
-                        <h3>Our <span class="alternate">Sponsors</span></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="sponsor-title text-center">
-                        <h5>Title Sponsors</h5>
-                    </div>
-                    <div class="block text-center">
-                        <ul class="list-inline sponsors-list">
-                            <li class="list-inline-item capital-inc-sponsor">
-                                <div class="image-block text-center">
-                                    <a>
-                                        <img src="images/sponsors/capital-inc.png" alt="capital-inc" class="img-fluid">
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sponsor-title text-center">
-                        <h5>Our Partners</h5>
-                    </div>
-                    <div class="block text-center">
-                        <ul class="list-inline sponsors-list">
-                            <li class="list-inline-item">
-                                <div class="image-block text-center">
-                                    <a>
-                                        <img src="images/sponsors/zulip.png" alt="zulip" class="img-fluid">
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="list-inline-item">
-                                <div class="image-block text-center">
-                                    <a>
-                                        <img src="images/sponsors/youth.png" alt="sponsors-logo" class="img-fluid">
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="list-inline-item">
-                                <div class="image-block text-center">
-                                    <a>
-                                        <img src="images/sponsors/give-my-certificate.png" alt="sponsors-logo" class="img-fluid">
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="block text-center">
-                        <ul class="list-inline sponsors-list">
-                            <li class="list-inline-item">
-                                <div class="image-block text-center">
-                                    <a>
-                                        <img src="images/sponsors/srmkzilla.png" alt="sponsors-logo" class="img-fluid increase">
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="list-inline-item">
-                                <div class="image-block text-center">
-                                    <a>
-                                        <img src="images/sponsors/ISTE LOGO.png" alt="sponsors-logo" class="img-fluid increase">
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="list-inline-item">
-                                <div class="image-block text-center">
-                                    <a>
-                                        <img src="images/sponsors/GfGbhopal.png" alt="sponsors-logo" class="img-fluid increase">
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- <div class="sponsor-btn text-center">
-						<a href="#" class="btn btn-main-md">Become a sponsor</a>
-					</div> -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- REGISTRATION FORM -->
-
-    <!--<section class="mozcode_reg_form" id="registration-form">
-        <div class="row1 registration-part" style="margin-left: 0px;margin-right: 0px;">
-            <section class="reg-form-size">
-                <header>
-                    <center>
-                        <h3 class="reg">Register</h3>
-                    </center>
-                    <h5>Please fill your information here</h5>
-                </header>
-                <main>
-                    <form id="idForm">
-                        <div class="form-item box-item">
-                            <input type="text" name="name" placeholder="Name" data-required id="name" required>
-
-                        </div>
-                        <div class="form-item box-item">
-                            <input type="email" name="email" placeholder="Email ID" data-email data-required id="email" required>
-                        </div>
-                        <div class="form-item box-item">
-                            <input type="text" name="username" placeholder="HackerRank Username" data-required id="user_name" required>
-                        </div>
-                        <div class="form-item box-item">
-                            <input type="text" name="college" placeholder="College Name" data-required id="clg_name" required>
-                        </div>
-                        <div class="form-item box-item">-->
-    <!-- pattern="^[\+]?[(]?[0-9 ]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" -->
-    <!--<input type="text" name="number" placeholder="Phone number (With Country Code)" data-required data-number id="ph_num" required>
-                        </div>
-                        <div class="form-item box-item">
-                            <input type="text" name="discord" placeholder="Discord Id (For eg. Mozcode#1234)" data-required id="discord" required>
-                        </div>
-                        <center><button type="submit" id="submit">SUBMIT</button></center>
-                    </form>
-                </main>
-                <i class="wave"></i>
-            </section>
-        </div>
-        <div id="faqs">
-
-        </div>
-    </section>-->
-
-
-    <div class="content mt-5 mb-5">
-        <h1>FAQs</h1>
-
-        <div class="row">
-            <div class="col-xl-6 col-12">
-                <div>
-
-
-                    <input type="checkbox" id="question1" name="q" class="questions">
-                    <label for="question1" class="question">
-
-						<div class="plus">+</div>
-						<b>Is any prior coding experience required for MozCode?</b>
-					</label>
-                    <div class="answers">
-                        <p>No. Anyone with little knowledge or totally new to this can apply. It will give them a chance to improvise their coding skills.</p>
-                    </div>
-                </div>
-                <!-- _____________________________________________________ -->
-                <div>
-                    <input type="checkbox" id="question2" name="q" class="questions">
-
-
-                    <label for="question2" class="question">
-						<div class="plus">+</div>
-						<b>Can I have a partner to work with if I participate in MozCode?</b>
-					</label>
-                    <div class="answers">
-                        <p>No. This is an individual coding competition.</p>
-                    </div>
-                </div>
-                <!-- _____________________________________________________ -->
-                <div>
-                    <input type="checkbox" id="question3" name="q" class="questions">
-
-
-                    <label for="question3" class="question">
-						<div class="plus">+</div>
-						<b>If I participate will I get any kind of certificate for participation?</b>
-					</label>
-                    <div class="answers">
-                        <p>Yes definitely, there are many things planned for those who are participating. Get ready for exciting giveaways.</p>
-                    </div>
-                </div>
-                <!-- _____________________________________________________ -->
-                <div>
-                    <input type="checkbox" id="question4" name="q" class="questions">
-
-
-                    <label for="question4" class="question">
-						<div class="plus">+</div>
-						<b>What kind of problems can we expect in the test?</b>
-					</label>
-                    <div class="answers">
-                        <p>There is no specific domain for the questions but the concept knowledge is tested.</p>
-                    </div>
-                </div>
-                <!-- _____________________________________________________ -->
-                <!-- _____________________________________________________ -->
-                <div>
-                    <input type="checkbox" id="question6" name="q" class="questions">
-
-
-                    <label for="question6" class="question">
-						<div class="plus">+</div>
-						<b>How do I prepare for the competition?</b>
-					</label>
-                    <div class="answers">
-
-                        <p>You can choose any programming language that you are comfortable with and practice problems in it provided on the internet. Don't set your goals very high to be disappointed, don't stress out, take regular break and practice well
-                            beforehand. </p>
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-xl-6 col-12">
-
-                <!-- _____________________________________________________ -->
-                <!-- _____________________________________________________ -->
-                <div>
-                    <input type="checkbox" id="question9" name="q" class="questions">
-
-                    <label for="question9" class="question">
-						<div class="plus">+</div>
-						<b>What if I get disconnected in between the challenge?</b>
-					</label>
-                    <div class="answers">
-                        <p>Even if you get disconnected during the challenge you can resume from where you left off but the timer keeps going..</p>
-                    </div>
-                </div>
-                <!-- _____________________________________________________ -->
-                <div>
-                    <input type="checkbox" id="question10" name="q" class="questions">
-
-                    <label for="question10" class="question">
-						<div class="plus">+</div>
-						<b>Why should I participate in MozCode?</b>
-					</label>
-                    <div class="answers">
-                        <p>Events like Mozcode helps you to deal with coding challenges, getting a creative approach towards problem-solving, and winners will also be awarded many exciting cash prizes.</p>
-                    </div>
-                </div>
-                <!-- _____________________________________________________ -->
-                <div>
-                    <input type="checkbox" id="question11" name="q" class="questions">
-
-                    <label for="question11" class="question">
-						<div class="plus">+</div>
-						<b>What is the judging criteria?</b>
-					</label>
-                    <div class="answers">
-                        <p>Based on leaderboards, participants will qualify for next round. Points will be awarded on the basis of time taken, no. of test cases passed and total tries.</p>
-                    </div>
-                </div>
-                <!-- _____________________________________________________ -->
-                <!-- _____________________________________________________ -->
-                <div>
-                    <input type="checkbox" id="question13" name="q" class="questions">
-
-                    <label for="question13" class="question">
-						<div class="plus">+</div>
-						<b>How long will the event last?</b>
-					</label>
-                    <div class="answers">
-                        <p>It will last for two days. Day 1 will start with opening Ceremony and then round 1 will begin ,the remaining two rounds will be on the 2nd day ending with the result declaration and prize distribution.</p>
-                    </div>
-                </div>
-                <!-- _____________________________________________________ -->
-                <div>
-                    <input type="checkbox" id="question7" name="q" class="questions">
-
-
-                    <label for="question7" class="question">
-						<div class="plus">+</div>
-						<b>What can I expect from this event in particular?</b>
-					</label>
-                    <div class="answers">
-                        <p>There are a set of logical problems provided that the contestants have to work out a solution and a code for, sometimes staying up all night. The leaderboard is determined by how fast the participants figure it out and how many
-                            test cases does their code work for. Based on the leaderboard, the top contestants qualify for the next round. In this event, there will be experienced speakers speaking about various interesting topics in between every round.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
+  </main>
 
 
 
 
 
-    <!--============================
-=            Footer            =
-=============================-->
 
-    <footer class="footer-main" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block text-center">
-                        <div class="footer-logo">
-                            <h1><b>Contact Us</b></h1>
-                        </div>
-                        <div class="contacts">
-                            <div class="single-contact">
-                                <h4>Avish Jha</h4>
-                                <p><a href="tel:+917488259466">+91 7488259466</a></p>
-                            </div>
-                            <div class="single-contact">
-                                <h4>Nishchay Jain</h4>
-                                <p><a href="tel:+918920578088">+91 8920578088</a></p>
-                            </div>
-                        </div>
-                        <div class="social-icons">
-                            <div class="social-col">
-                                <div class="social-icon">
-                                    <a href="https://www.facebook.com/mfcvit/" target="_blank"><i class="fab fa-facebook"></i></a>
-                                </div>
-                                <div class="social-icon">
-                                    <a href="https://www.youtube.com/channel/UCPMMpzYtoS0atGVKf_MlOyg" target="_blank"><i
-											class="fab fa-youtube"></i></a>
-                                </div>
-                                <div class="social-icon">
-                                    <a href="https://www.instagram.com/mfc_vit/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="social-col">
-                                <div class="social-icon">
-                                    <a href="https://www.linkedin.com/company/mozilla-firefox-club-vit" target="_blank"><i
-											class="fab fa-linkedin"></i></a>
-                                </div>
-                                <div class="social-icon">
-                                    <a href="https://github.com/MFC-VIT" target="_blank"><i class="fab fa-github"></i></a>
-                                </div>
-                                <div class="social-icon">
-                                    <a href="mailto:pr.mozillavit@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <h4 class="mail-to-mfc">Mail us</h4> -->
-                    </div>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
-                </div>
-            </div>
-        </div>
-        <footer class="subfooter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 align-self-center">
-                        <div class="copyright-text">
-                            <p>Made with <span id="heart-icon">&#10084</span> by <span id="MFC-VIT"><a href="https://mfcvit.in" target="_blank">MFC-VIT</a></span></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </footer>
-    <!-- Subfooter -->
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    </div>
-
-
-    <!-- JAVASCRIPTS -->
-    <!-- jQuey -->
-    <script src="plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="plugins/bootstrap/bootstrap.min.js"></script>
-    <!-- Shuffle -->
-    <script src="plugins/shuffle/shuffle.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <!-- Slick Carousel -->
-    <script src="plugins/slick/slick.min.js"></script>
-    <!-- SyoTimer -->
-    <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-    <!-- Custom Script -->
-    <script src="./js/script.js"></script>
-    <script src="./js/form.js"></script>
 </body>
 
 </html>
